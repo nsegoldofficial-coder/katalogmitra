@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment Portfolio</title>
+    <title>Catalog Mitra</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
             font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
             margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
             padding: 20px;
+            max-width: 800px;
+            margin: auto;
         }
-
-        img.logo {
-            width: 200px;
-            margin-bottom: 20px;
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #35424a;
+            color: white;
         }
-
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 80%;
+        .button {
+            padding: 10px 15px;
+            background: #e8491d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
         }
-
-        th, td {
-            border: 1px solid white;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: rgba(255, 255, 255, 0.2);
+        .button:hover {
+            background: #333;
         }
     </style>
 </head>
-
 <body>
-    <img src="logo.png" alt="Logo" class="logo">
-    <h1>Welcome to Our Investment Portfolio</h1>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Investment</th>
-                <th>Amount</th>
-                <th>Return</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Stock Market</td>
-                <td>$10,000</td>
-                <td>8%</td>
-            </tr>
-            <tr>
-                <td>Real Estate</td>
-                <td>$20,000</td>
-                <td>5%</td>
-            </tr>
-            <tr>
-                <td>Mutual Funds</td>
-                <td>$15,000</td>
-                <td>6%</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <header>
+        <h1>Welcome to Katalog Mitra</h1>
+    </header>
+    <main>
+        <h2>Our Services</h2>
+        <p>Explore our wide range of services designed to cater to your needs.</p>
+        <a href="#" class="button">Learn More</a>
+    </main>
     <footer>
-        <p>Contact us on WhatsApp: <a href="https://wa.me/11234567890" style="color: white;">Chat with us!</a></p>
+        <p>&copy; 2026 Katalog Mitra. All Rights Reserved.</p>
     </footer>
 </body>
-
 </html>
