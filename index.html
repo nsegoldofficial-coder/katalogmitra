@@ -3,186 +3,509 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proposal Kemitraan – PT RA FARM INDONESIA</title>
+  <title>Proposal Kemitraan Investasi - PT RA FARM INDONESIA</title>
 
   <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #f4f4f4;
+    * {
       margin: 0;
       padding: 0;
-      color: #222;
+      box-sizing: border-box;
     }
 
-    .page {
-      max-width: 900px;
-      margin: 30px auto;
-      background: #fff;
-      padding: 40px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    body {
+      font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #2c3e50;
+      line-height: 1.6;
+      min-height: 100vh;
     }
 
-    .center { text-align: center; }
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #1a472a 0%, #2d6a4f 100%);
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
 
     .logo {
-      width: 110px;
-      margin-bottom: 10px;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid rgba(255, 255, 255, 0.3);
     }
 
-    h1 {
-      font-size: 24px;
-      margin: 10px 0 5px;
-      color: #5a3b0c;
+    .logo img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .header .subtitle {
+      font-size: 16px;
+      font-weight: 500;
+      opacity: 0.95;
+      margin-bottom: 5px;
+    }
+
+    .header .tagline {
+      font-size: 14px;
+      opacity: 0.85;
+      font-weight: 300;
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 50px 40px;
+    }
+
+    /* INTRO BOX */
+    .intro-box {
+      background: linear-gradient(135deg, rgba(42, 107, 79, 0.05) 0%, rgba(42, 107, 79, 0.02) 100%);
+      border-left: 5px solid #2d6a4f;
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #34495e;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-bottom: 45px;
     }
 
     h2 {
-      font-size: 16px;
-      margin: 25px 0 8px;
-      color: #7a4a1f;
-      border-bottom: 2px solid #e6d3a3;
-      padding-bottom: 4px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a472a;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #2d6a4f;
+      display: inline-block;
     }
 
     p {
-      font-size: 14px;
-      line-height: 1.6;
-      margin: 6px 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #34495e;
+      margin-bottom: 12px;
     }
 
-    .box {
-      background: #f6ecd9;
-      padding: 12px 15px;
-      margin-top: 12px;
-      font-size: 14px;
+    /* INVESTMENT TABLE */
+    .table-wrapper {
+      overflow-x: auto;
+      margin-top: 20px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: center;
+      background: white;
     }
 
     th {
-      background: #e6d3a3;
-      font-weight: bold;
-    }
-
-    ul {
-      padding-left: 18px;
-      margin: 6px 0;
+      background: linear-gradient(135deg, #2d6a4f 0%, #1a472a 100%);
+      color: white;
+      padding: 16px 12px;
+      text-align: center;
+      font-weight: 600;
       font-size: 14px;
+      letter-spacing: 0.3px;
     }
 
+    td {
+      padding: 14px 12px;
+      text-align: center;
+      font-size: 14px;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    tr:nth-child(even) {
+      background: #f8fafb;
+    }
+
+    tr:hover {
+      background: #f0f7f5;
+      transition: background-color 0.2s ease;
+    }
+
+    td:first-child {
+      font-weight: 600;
+      color: #2d6a4f;
+    }
+
+    /* BENEFITS LIST */
+    ul, ol {
+      padding-left: 24px;
+      margin: 15px 0;
+    }
+
+    li {
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+
+    li:before {
+      content: "✓ ";
+      color: #2d6a4f;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    ol li:before {
+      content: none;
+    }
+
+    ol {
+      counter-reset: item;
+      list-style: none;
+    }
+
+    ol li {
+      counter-increment: item;
+    }
+
+    ol li:before {
+      content: counter(item) ". ";
+      color: #2d6a4f;
+      font-weight: 600;
+      margin-right: 8px;
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box {
+      background: linear-gradient(135deg, #2d6a4f 0%, #1a472a 100%);
+      color: white;
+      padding: 28px 32px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .highlight-box strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    /* FOOTER */
     footer {
-      margin-top: 30px;
+      background: #f8fafb;
+      padding: 40px;
+      border-top: 1px solid #ecf0f1;
+      text-align: center;
+      font-size: 14px;
+      color: #34495e;
+    }
+
+    .contact-info {
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      margin-top: 20px;
+      border: 2px solid #2d6a4f;
+    }
+
+    .contact-info strong {
+      color: #1a472a;
+      display: block;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .whatsapp-link {
+      color: #25d366;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .whatsapp-link:hover {
+      text-decoration: underline;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 16px 20px;
+      margin-top: 15px;
+      border-radius: 4px;
       font-size: 13px;
-      color: #444;
+      color: #664d03;
+      line-height: 1.6;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+      }
+
+      .header {
+        padding: 40px 25px;
+      }
+
+      .header h1 {
+        font-size: 26px;
+      }
+
+      .content {
+        padding: 30px 25px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+
+      table {
+        font-size: 13px;
+      }
+
+      th, td {
+        padding: 12px 8px;
+      }
     }
 
     @media print {
       body {
-        background: #fff;
+        background: white;
       }
-      .page {
+
+      .container {
         box-shadow: none;
         margin: 0;
+        border-radius: 0;
+      }
+
+      .header {
+        padding: 40px;
       }
     }
   </style>
 </head>
 <body>
 
-<div class="page">
+<div class="container">
 
   <!-- HEADER -->
-  <div class="center">
-    <img src="logo.png" alt="PT RA FARM INDONESIA" class="logo">
-    <h1>PROPOSAL KEMITRAAN TITIP MODAL</h1>
-    <p><strong>PT RA FARM INDONESIA</strong><br>
-    Peternakan Ayam Petelur</p>
+  <div class="header">
+    <div class="logo">
+      <img src="logo.png" alt="PT RA FARM INDONESIA">
+    </div>
+    <h1>PROPOSAL KEMITRAAN INVESTASI</h1>
+    <p class="subtitle">PT RA FARM INDONESIA</p>
+    <p class="tagline">Program Kemitraan Titip Modal Peternakan Ayam Petelur</p>
   </div>
 
-  <div class="box">
-    Proposal ini merupakan penawaran resmi program kemitraan titip modal
-    pada usaha peternakan ayam petelur yang dikelola secara profesional,
-    transparan, dan berorientasi pada keberlanjutan usaha.
+  <!-- MAIN CONTENT -->
+  <div class="content">
+
+    <!-- INTRODUCTION -->
+    <div class="intro-box">
+      Proposal ini merupakan penawaran resmi program kemitraan titip modal pada usaha peternakan ayam petelur yang dikelola secara profesional, transparan, dan berorientasi pada keberlanjutan usaha jangka panjang dengan sistem manajemen modern.
+    </div>
+
+    <!-- PROFIL PERUSAHAAN -->
+    <section>
+      <h2>Profil Perusahaan</h2>
+      <p>
+        PT RA FARM INDONESIA adalah perusahaan yang berfokus pada pengembangan usaha peternakan ayam petelur dengan sistem manajemen operasional yang modern, terukur, dan berkelanjutan. Kami berkomitmen untuk menghadirkan program kemitraan investasi yang menguntungkan bagi semua pihak dengan transparansi penuh dan akuntabilitas tinggi.
+      </p>
+      <ul>
+        <li>Pengalaman bertahun-tahun di industri peternakan unggas</li>
+        <li>Sistem manajemen terintegrasi dan berbasis teknologi</li>
+        <li>Tim profesional berpengalaman di bidang operasional dan keuangan</li>
+        <li>Komitmen terhadap keberlanjutan lingkungan dan kesejahteraan hewan</li>
+      </ul>
+    </section>
+
+    <!-- KONSEP KEMITRAAN -->
+    <section>
+      <h2>Konsep Kemitraan Titip Modal</h2>
+      <p>
+        Model kemitraan kami dirancang untuk memberikan kesempatan investasi yang aman dan menguntungkan. Mitra menempatkan dana investasi sesuai dengan paket pilihan, sementara PT RA FARM INDONESIA menangani seluruh aspek operasional usaha.
+      </p>
+      <ul>
+        <li>Mitra menyediakan modal sesuai paket investasi yang dipilih</li>
+        <li>PT RA FARM INDONESIA mengelola semua operasional termasuk pakan, vitamin, perawatan ternak, dan tenaga kerja</li>
+        <li>Hasil panen dibagi sesuai kesepakatan bersama dalam MOU</li>
+        <li>Kontrak kemitraan berlaku selama 10 (sepuluh) kali panen</li>
+        <li>Laporan berkala dan monitoring transparan disediakan setiap panen</li>
+      </ul>
+    </section>
+
+    <!-- PAKET INVESTASI -->
+    <section>
+      <h2>Paket Investasi</h2>
+      <p style="margin-bottom: 20px;">Pilih paket investasi yang sesuai dengan kapasitas finansial dan target keuntungan Anda:</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Paket Investasi</th>
+              <th>Modal Awal</th>
+              <th>Potensi Hasil (10 Panen)</th>
+              <th>Target Keuntungan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bronze</td>
+              <td>Rp 1.000.000</td>
+              <td>Rp 20.000.000</td>
+              <td>Rp 10.000.000</td>
+            </tr>
+            <tr>
+              <td>Silver</td>
+              <td>Rp 1.800.000</td>
+              <td>Rp 50.000.000</td>
+              <td>Rp 25.000.000</td>
+            </tr>
+            <tr>
+              <td>Gold</td>
+              <td>Rp 2.500.000</td>
+              <td>Rp 80.000.000</td>
+              <td>Rp 40.000.000</td>
+            </tr>
+            <tr>
+              <td>Platinum</td>
+              <td>Rp 3.400.000</td>
+              <td>Rp 120.000.000</td>
+              <td>Rp 60.000.000</td>
+            </tr>
+            <tr>
+              <td>Diamond</td>
+              <td>Rp 5.500.000</td>
+              <td>Rp 150.000.000</td>
+              <td>Rp 75.000.000</td>
+            </tr>
+            <tr>
+              <td>Super VVIP</td>
+              <td>Rp 10.000.000</td>
+              <td>Rp 300.000.000</td>
+              <td>Rp 150.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SISTEM KERJA -->
+    <section>
+      <h2>Sistem Kerja Kemitraan</h2>
+      <ol>
+        <li><strong>Pemilihan Paket:</strong> Calon mitra memilih paket investasi sesuai kemampuan</li>
+        <li><strong>Transfer Dana:</strong> Mitra mentransfer dana investasi ke rekening resmi perusahaan</li>
+        <li><strong>Penandatanganan MOU:</strong> Kedua belah pihak menandatangani Memorandum of Understanding resmi</li>
+        <li><strong>Pengelolaan Operasional:</strong> Tim PT RA FARM INDONESIA mengelola semua aspek usaha</li>
+        <li><strong>Monitoring & Laporan:</strong> Laporan berkala diberikan setiap periode panen</li>
+        <li><strong>Distribusi Hasil:</strong> Keuntungan dibagikan sesuai skema bagi hasil yang disepakati</li>
+        <li><strong>Perpanjangan/Selesai:</strong> Setelah 10 panen, mitra dapat memperpanjang atau mengakhiri kemitraan</li>
+      </ol>
+    </section>
+
+    <!-- BAGI HASIL -->
+    <section>
+      <h2>Skema Bagi Hasil</h2>
+      <div class="highlight-box">
+        <strong>Pembagian Keuntungan: 50% Mitra – 50% Pengelola</strong>
+        Panen dilakukan secara berkala setiap ±10 hari dengan distribusi hasil yang transparan dan terdokumentasi
+      </div>
+      <p style="margin-top: 20px;">
+        <strong>Komponen Bagi Hasil:</strong>
+      </p>
+      <ul>
+        <li>Keuntungan kotor dari penjualan telur dan ayam afkir</li>
+        <li>Dikurangi biaya operasional (pakan, vitamin, tenaga kerja, listrik, transportasi)</li>
+        <li>Sisa keuntungan dibagi 50% untuk mitra dan 50% untuk pengelola</li>
+        <li>Laporan detail disertakan dalam setiap laporan pembayaran</li>
+      </ul>
+    </section>
+
+    <!-- KEUNTUNGAN KEMITRAAN -->
+    <section>
+      <h2>Keuntungan Program Kemitraan</h2>
+      <ul>
+        <li>Investasi dengan risiko operasional minimal (dikelola oleh profesional)</li>
+        <li>Return on Investment (ROI) yang menarik dan terukur</li>
+        <li>Transparansi penuh dalam setiap tahapan operasional</li>
+        <li>Laporan berkala dan akses monitoring real-time</li>
+        <li>Fleksibilitas pilihan paket sesuai kapasitas modal</li>
+        <li>Dukungan teknis penuh dari tim manajemen berpengalaman</li>
+        <li>Potensi perpanjangan kontrak untuk jangka panjang</li>
+      </ul>
+    </section>
+
+    <!-- LEGALITAS -->
+    <section>
+      <h2>Legalitas & Keamanan</h2>
+      <p>
+        PT RA FARM INDONESIA menjalankan setiap kegiatan usaha sesuai dengan ketentuan hukum yang berlaku di Republik Indonesia. Setiap kerja sama formal dituangkan dalam dokumen perjanjian resmi (Memorandum of Understanding / MOU) yang ditandatangani oleh kedua belah pihak.
+      </p>
+      <ul>
+        <li>Perjanjian resmi (MOU) yang mengikat secara hukum</li>
+        <li>Laporan keuangan yang terverifikasi dan transparan</li>
+        <li>Dokumentasi lengkap untuk setiap transaksi</li>
+        <li>Asuransi usaha dan proteksi aset kemitraan</li>
+      </ul>
+
+      <div class="disclaimer">
+        <strong>⚠ Disclaimer Penting:</strong><br>
+        Informasi potensi hasil yang tercantum merupakan estimasi berdasarkan kinerja usaha historis dan kondisi operasional normal. Perusahaan tidak memberikan jaminan keuntungan tetap karena bisnis peternakan dipengaruhi oleh berbagai faktor eksternal seperti kondisi pasar, kesehatan hewan, dan fluktuasi harga pakan. Calon mitra disarankan melakukan due diligence menyeluruh sebelum menandatangani perjanjian.
+      </div>
+    </section>
+
   </div>
-
-  <!-- PROFIL -->
-  <h2>Profil Perusahaan</h2>
-  <p>
-    PT RA FARM INDONESIA bergerak di bidang peternakan ayam petelur dengan
-    sistem manajemen modern dan terukur. Perusahaan berfokus pada pengembangan
-    kemitraan investasi berbasis operasional riil.
-  </p>
-
-  <!-- KONSEP -->
-  <h2>Konsep Kemitraan Titip Modal</h2>
-  <p>
-    Mitra menempatkan dana investasi sesuai paket yang dipilih. Seluruh
-    pengelolaan operasional, termasuk pakan, vitamin, perawatan ternak,
-    dan tenaga kerja, sepenuhnya dikelola oleh PT RA FARM INDONESIA.
-  </p>
-
-  <!-- PAKET -->
-  <h2>Paket Investasi</h2>
-  <table>
-    <tr>
-      <th>Paket</th>
-      <th>Modal</th>
-      <th>Potensi Hasil</th>
-    </tr>
-    <tr><td>Bronze</td><td>Rp 1.000.000</td><td>Rp 20.000.000</td></tr>
-    <tr><td>Silver</td><td>Rp 1.800.000</td><td>Rp 50.000.000</td></tr>
-    <tr><td>Gold</td><td>Rp 2.500.000</td><td>Rp 80.000.000</td></tr>
-    <tr><td>Platinum</td><td>Rp 3.400.000</td><td>Rp 120.000.000</td></tr>
-    <tr><td>Diamond</td><td>Rp 5.500.000</td><td>Rp 150.000.000</td></tr>
-    <tr><td>Super VVIP</td><td>Rp 10.000.000</td><td>Rp 300.000.000</td></tr>
-  </table>
-
-  <!-- SISTEM -->
-  <h2>Sistem Kerja Kemitraan</h2>
-  <ul>
-    <li>Pemilihan paket investasi oleh mitra</li>
-    <li>Transfer dana dan penandatanganan MOU resmi</li>
-    <li>Pengelolaan penuh oleh tim PT RA FARM INDONESIA</li>
-    <li>Kontrak kemitraan selama 10 (sepuluh) kali panen</li>
-    <li>Monitoring dan laporan berkala</li>
-    <li>Distribusi hasil sesuai skema bagi hasil</li>
-  </ul>
-
-  <!-- BAGI HASIL -->
-  <h2>Skema Bagi Hasil</h2>
-  <div class="box">
-    <strong>50% Mitra – 50% Pengelola</strong><br>
-    Panen dilakukan secara berkala setiap ±10 hari.
-  </div>
-
-  <!-- LEGAL -->
-  <h2>Legalitas & Disclaimer</h2>
-  <p>
-    PT RA FARM INDONESIA menjalankan kegiatan usaha sesuai ketentuan hukum
-    yang berlaku di Republik Indonesia. Setiap kerja sama dituangkan
-    dalam dokumen perjanjian resmi (MOU).
-  </p>
-  <p>
-    Informasi potensi hasil merupakan estimasi berdasarkan kinerja usaha
-    dan kondisi operasional normal. Perusahaan tidak memberikan jaminan
-    keuntungan tetap.
-  </p>
 
   <!-- FOOTER -->
   <footer>
-    <strong>Kontak Resmi:</strong><br>
-    Admin Kemitraan PT RA FARM INDONESIA<br>
-    WhatsApp: 0858-2540-8081
+    <div class="contact-info">
+      <strong>📞 Hubungi Kami untuk Informasi Lebih Lanjut</strong>
+      <p><strong>PT RA FARM INDONESIA</strong></p>
+      <p>Tim Kemitraan & Investor Relations</p>
+      <p style="margin-top: 12px;">
+        <a href="https://wa.me/6285825408081" class="whatsapp-link">
+          💬 WhatsApp: 0858-2540-8081
+        </a>
+      </p>
+      <p style="font-size: 13px; color: #7f8c8d; margin-top: 12px;">
+        Klik link WhatsApp di atas untuk konsultasi langsung atau tanyakan berbagai paket kemitraan yang tersedia
+      </p>
+    </div>
+    <p style="margin-top: 30px; color: #95a5a6;">
+      © 2026 PT RA FARM INDONESIA. Semua hak cipta dilindungi.
+    </p>
   </footer>
 
 </div>
